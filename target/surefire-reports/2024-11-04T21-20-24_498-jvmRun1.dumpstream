@@ -1,0 +1,37 @@
+# Created at 2024-11-04T21:24:54.306
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+# Created at 2024-11-04T21:24:55.899
+Unexpected IOException with stream: 2024-11-04 21:24:55.898  INFO 13353 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+
+
+# Created at 2024-11-04T21:24:56.104
+Unexpected IOException with stream: 2024-11-04 21:24:56.104  INFO 13353 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 192 ms. Found 0 JDBC repository interfaces.
+
+
+# Created at 2024-11-04T21:25:03.698
+Unexpected IOException with stream: 2024-11-04 21:25:03.606  INFO 13353 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+
+
+# Created at 2024-11-04T21:25:07.503
+Unexpected IOException with stream: 2024-11-04 21:25:07.501  INFO 13353 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+
+
+# Created at 2024-11-04T21:25:25.603
+Unexpected IOException with stream: 2024-11-04 21:25:25.595  INFO 13353 --- [           main] com.example.employee.SmokeTest           : Started SmokeTest in 285.805 seconds (JVM running for 297.305)
+
+
+# Created at 2024-11-04T21:25:25.704
+Unexpected IOException with stream: 2024-11-04 21:25:25.697  INFO 13353 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+
+
+# Created at 2024-11-04T21:25:25.806
+Unexpected IOException with stream: 2024-11-04 21:25:25.805  INFO 13353 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+
