@@ -42,7 +42,7 @@ public class Employee {
     }
 
     public String getDepartment() {
-        return email;
+        return department;
     }
 
 }

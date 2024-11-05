@@ -25,14 +25,14 @@ public class EmployeeH2Service implements EmployeeRepository {
 
     @Override
     public Employee getEmployeeById(int employeeId) {
-        try{
-            Employee employee = db.queryForObject("select * from employeelist where employeeId=?", new EmployeeRowMapper(),
-                employeeId);
+        try {
+            Employee employee = db.queryForObject("select * from employeelist where employeeId=?",
+                    new EmployeeRowMapper(),
+                    employeeId);
             return employee;
-        }catch(Exception e){
+        } catch (Exception e) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND);
         }
-        
 
     }
 
@@ -49,23 +49,24 @@ public class EmployeeH2Service implements EmployeeRepository {
 
     @Override
     public Employee updateEmployee(int employeeId, Employee employee) {
-        try{
+        try {
 
             if (employee.getEmployeeName() != null) {
-            db.update("update employeelist set employeeName=? where employeeId=?", employee.getEmployeeName(),
-                    employeeId);
+                db.update("update employeelist set employeeName=? where employeeId=?", employee.getEmployeeName(),
+                        employeeId);
             }
             if (employee.getEmail() != null) {
                 db.update("update employeelist set email=? where employeeId=?", employee.getEmail(), employeeId);
             }
             if (employee.getDepartment() != null) {
-                db.update("update employeelist set department=? where employeeId=?", employee.getDepartment(), employeeId);
+                db.update("update employeelist set department=? where employeeId=?", employee.getDepartment(),
+                        employeeId);
             }
             return getEmployeeById(employeeId);
-        }catch(Exception e){
+        } catch (Exception e) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND);
         }
-        
+
     }
 
     @Override
